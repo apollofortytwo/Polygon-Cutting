@@ -8,7 +8,7 @@ public class CameraController implements InputProcessor {
 
 
 	OrthographicCamera cam;
-	float speed = 500000.0f;
+	float speed = 5000.0f;
 	float scroll;
 	InputHandler inputHandler;
 	CameraController(OrthographicCamera cam) {
@@ -38,12 +38,12 @@ public class CameraController implements InputProcessor {
 			cam.translate(-speed, 0);
 		}
 		if(InputHandler.checkKey("Z")){
-			cam.zoom -= 1000;
+			cam.zoom -= 10;
 					
 			//scroll = 0;
 		}
 		if(InputHandler.checkKey("X")){
-			cam.zoom += 1000;
+			cam.zoom += 1;
 					
 			//scroll = 0;
 		}
